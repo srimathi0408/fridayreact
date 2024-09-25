@@ -1,0 +1,848 @@
+/* General Styles */
+body {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/007/852/348/non_2x/abstract-colorful-watercolor-background-texture-bright-splash-nature-frame-art-illustration-vector.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d96ae1;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+  font-size: 1.5rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #dfd2dd;
+}
+
+.cart-button:hover {
+  color: #df93d1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f6eff4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.cart-button {
+  background-color: #f3ebf4;
+  color: rgb(28, 24, 24);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-button:hover {
+  background-color: #b7a8e4;
+}
+
+.cart-button::before {
+  content: "🛒";
+  margin-right: 8px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-toggle::after {
+  content: ' ▼';
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f6f5fa;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+  min-width: 200px;
+  padding: 10px 0;
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  color: #0f0f0f;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #e2a8e7;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Hero Section */
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/007/852/348/non_2x/abstract-colorful-watercolor-background-texture-bright-splash-nature-frame-art-illustration-vector.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-image img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: #333;
+  
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin-left: 150px;
+ 
+}
+
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center buttons */
+  gap: 10px;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+
+.login-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  color: rgb(17, 17, 17);
+  background: linear-gradient(45deg, #07e020, #0765e0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  color:rgb(17, 17, 17);
+  background: linear-gradient(45deg, #cedfb0, #e8ebef);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 100px;
+}
+
+.login-button:hover, .signup-button:hover {
+  background-color: #111213;
+  background: linear-gradient(45deg, #1a73e8, #8800b5);
+}
+
+
+/*product page*/
+.product-page, .category-page, .contact-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+.product-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 28px;
+  color: #1a73e8;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #1a73e8;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-name {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-to-cart-button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color:#e392e9;
+}
+
+.buy-now-button {
+  background-color:  #1a73e8;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-now-button:hover {
+  background-color: #e392e9;
+}
+
+
+
+
+/* Page Styles for Types of Handicraft, Home Decor, and Statues & Sculptures */
+.page-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  flex: 0 1 300px;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/*Contact.css*/
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/007/852/348/non_2x/abstract-colorful-watercolor-background-texture-bright-splash-nature-frame-art-illustration-vector.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.contact-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+  text-align: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #1a73e8;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #0077ff;
+}
+
+.contact-textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-submit {
+  padding: 15px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-submit:hover {
+  background-color: #005bb5;
+}
+
+/*About.css*/
+.about-container {
+  margin: 100px;
+  margin-right: 400px;
+  margin-left: 300px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #06c5f5, #07e061);
+}
+
+.about-image {
+  max-width: 300px;
+  margin-right: 100px; /* Space between the image and the content */
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h1 {
+  color: rgb(179, 0, 255); 
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+/* Animation Keyframes */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*Admin.css*/
+.admin-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/007/852/348/non_2x/abstract-colorful-watercolor-background-texture-bright-splash-nature-frame-art-illustration-vector.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.admin-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.admin-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.admin-card form div {
+  margin-bottom: 15px;
+}
+
+.admin-card label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.admin-card input, 
+.admin-card textarea, 
+.admin-card select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.admin-card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-card button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Overall container for the signup page */
+.Signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin-bottom: 100px;
+}
+
+/* Container for the form */
+.form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+/* Form heading */
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Focus effect on input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #1a73e8;
+}
+
+/* Error message styling */
+div[style*="color: red"] {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #1a73e8, #005bb5); /* Gradient background for the button */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+  background: linear-gradient(45deg, #005bb5, #1a73e8); /* Reverse gradient on hover */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 480px) {
+  .form {
+    width: 90%;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* Overall login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the form */
+.login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay for styling */
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+/* Form heading */
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Focus effect on input fields */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #1a73e8;
+}
+
+/* Error message styling */
+div[style*="color: red"] {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Login button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #1a73e8, #15b500);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Hover effect for the login button */
+button[type="submit"]:hover {
+  background: linear-gradient(45deg, #005bb5, #e81a96);
+}
+
+/* Signup button styling */
+.signup-button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  color: #1a73e8;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.signup-button a {
+  text-decoration: none;
+  color: #1a73e8;
+  transition: color 0.3s;
+}
+
+/* Hover effect for the signup button */
+.signup-button a:hover {
+  color: #005bb5;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .login-form {
+    width: 90%;
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 24
+  }
+}
+
+/*Cart.css*/
+.cart-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.empty-cart-message {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  color: #333;
+}
+
+.cart-items li:last-child {
+  border-bottom: none;
+}
+
+.cart-item-name {
+  font-weight: bold;
+}
+
+.cart-item-price {
+  color: #1a73e8;
+}
+
+.checkout-button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #005bb5;
+}
